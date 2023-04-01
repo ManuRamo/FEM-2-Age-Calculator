@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;0,800;1,400;1,500;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-container">
+            <div class="input">
+                <p class="date-type">DAY</p>
+                <input type="text" placeholder="DD" id="input-day">
+                <p style="color: hsl(0, 100%, 67%)" class="error">lorem ipsum</p>
+            </div>
+
+            <div class="input">
+                <p class="date-type">MONTH</p>
+                <input type="text" placeholder="MM" id="input-month">
+                <p style="color: hsl(0, 100%, 67%)" class="error">lorem ipsum</p>
+            </div>
+
+            <div class="input">
+                <p class="date-type">YEAR</p>
+                <input type="text" placeholder="YYYY" id="input-year">
+                <p style="color: hsl(0, 100%, 67%)" class="error">lorem ipsum</p>
+            </div>
+        </div>
+
+        <div class="divider">
+            <div class="line">
+
+            </div>
+
+            <div class="arrow">
+                <button id="age-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44">
+                        <g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g>
+                    </svg>
+                </button> 
+            </div>
+        </div>
+
+        <div class="age-container">
+            <div class="age-display years">
+                <h1 class="purple" id="result-year">0</h1>
+                <h1>years</h1>
+            </div>
+
+            <div class="age-display months">
+                <h1 class="purple" id="result-month">0</h1>
+                <h1>months</h1>
+            </div>
+
+            <div class="age-display days">
+                <h1 class="purple" id="result-day">0</h1>
+                <h1>days</h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
