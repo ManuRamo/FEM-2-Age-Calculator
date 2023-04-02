@@ -29,6 +29,18 @@ ageButton.addEventListener("click", function(){
         })
         return
     }
+    
+    if (today.getMonth() > 12) {
+        errorTexts.forEach(errorText => {
+            errorText.classList.remove("error")
+            errorText.innerHTML = "Insert a valid date"
+        })
+
+        dateTypes.forEach(dateType => {
+            dateType.style.color = "hsl(0, 100%, 67%)"
+        })
+        return
+    }
 
     switch(monthInput.value){
         case "4":
